@@ -1,0 +1,211 @@
+/*===============================
+Typography Style Start
+================================*/
+// google fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+
+
+body {
+    font-size: $font-size-base;
+    font-weight: 400;
+    font-family: $font-family-base;
+    color: $paragraph;
+}
+
+a {
+    @include transition(0.4s);
+    &:hover,
+    &:focus {
+        color: $brand-color;
+        outline: none;
+        text-decoration: none;
+    }
+}
+a,
+a:hover,
+a:focus,
+input,
+button,
+textarea,
+button:hover,
+button:focus {
+    outline: none;
+    text-decoration: none;
+}
+.form-control{
+    &:focus {
+        border-color: #fedc19;
+        box-shadow: none;
+    }
+}
+.slick-slide:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    color: $paragraph;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: $font-family-base;
+    color: $black-soft;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+.fix {
+    overflow: hidden;
+}
+
+.features-item-area {
+    .container-fluid {
+        padding-left: 150px;
+        padding-right: 150px;
+        @media #{$laptop-device} {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        @media #{$large-mobile} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        @media #{$tablet-device} {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+.white {
+    color: #fff;
+}
+
+.good {
+    color: $brand-color;
+}
+
+.gray {
+    background: #f8f8f8;
+}
+
+.black-soft {
+    background: #202020;
+}
+.bg-white {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+}
+.bg-facebook {
+    background: #365899;
+}
+
+.bg-twitter {
+    background: #1b95e0;
+}
+
+.bg-google {
+    background: #e04b34;
+}
+.c-red {
+    background: red;
+}
+
+.c-gray {
+    background: gray;
+}
+
+.c-blue {
+    background: blue;
+}
+
+.c-brown {
+    background: brown;
+}
+
+.c-black {
+    background: black;
+}
+
+// common button style
+a.add_btn {
+    color: $white;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: $black-soft;
+    i {
+        font-size: 18px;
+        line-height: 40px;
+        padding-right: 5px;
+    }
+    &:hover {
+        color: $black-soft;
+        background-color: $brand-color;
+    }
+}
+
+.check-btn {
+    color: $white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    padding: 0 20px;
+    display: inline-block;
+    background: $black-soft;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    @include transition;
+    &:hover {
+        color: $black-soft;
+        background-color: $brand-color;
+    }
+    &.sqr-btn {
+        border-radius: 4px;
+    }
+}
+
+// modal style
+.modal {
+    z-index: 99999;
+    .modal-header .close {
+        padding: 10px 20px;
+    }
+    .modal-body {
+        @media #{$extra-small-mobile} {
+            padding: 10px;
+        }
+    }
+}
+
+

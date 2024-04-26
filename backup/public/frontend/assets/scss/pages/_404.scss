@@ -1,0 +1,90 @@
+.error {
+	h1 {
+	    font-size: 200px;
+	    font-weight: 900;
+	    letter-spacing: 1rem;
+        line-height: 1.1;
+        margin-top: -36px; 
+        color: $brand-color;
+        // responsive
+        @media #{$tablet-device} {
+            font-size: 130px;
+        }
+        @media #{$large-mobile} {
+            font-size: 100px;
+            margin-top: -16px;
+        }
+	}
+	h2 {
+        font-size: 25px;
+        // responsive
+        @media #{$extra-small-mobile} {
+            font-size: 20px;
+        }
+    }
+    .btn{
+        position: relative;
+        transition: all .3s;
+        color: #fff;
+        font-size: 16px; 
+        min-width: 184px;
+        min-height: 55px;
+        line-height: 55px;
+        margin-bottom: 6px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 0;
+        background-color: $brand-color;
+        @media (max-width: 991px){
+            min-width: 170px;
+            min-height: 50px;
+            line-height: 50px;
+        }
+        @media (max-width: 767px){
+            min-width: 160px;
+            min-height: 45px;
+            line-height: 45px; 
+        }
+        @media (max-width: 575px){
+            min-width: 150px; 
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: -6px;
+            height: 3px;
+            width: 100%;
+            background-color: $brand-color;
+        }
+        &:hover{
+            background-color: #111111;
+            color: #fff;
+            &:after{ 
+                background-color: #111111;
+            }
+        }
+    }
+    .searchform {
+        display: flex;
+        margin-top: 40px;
+        justify-content: flex-start;
+        &__input{
+            border: 1px solid #eeeeee;
+            height: 45px;
+            width: 100%;
+            padding-left: 15px;
+            // responsive
+            @media #{$extra-small-mobile} {
+                width: 85%;
+            }
+        }
+        &__submit{
+            border: none;
+            background-color: $brand-color;
+            width: 70px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}

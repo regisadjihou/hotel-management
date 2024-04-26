@@ -1,0 +1,437 @@
+
+/*----- breadcrumb style css start -----*/
+.breadcrumb-area {
+    background: url(../img/bg/page-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.breadcrumb-wrap {
+    padding: 90px 0;
+    // responsive
+    @media #{$large-mobile} {
+        padding: 35px 0;
+    }
+    .breadcrumb-title {
+        color: $white;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        @media #{$extra-small-mobile}{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+    .breadcrumb {
+        background: transparent;
+        margin-bottom: 0;
+        padding: 0;
+        justify-content: center;
+        .breadcrumb-item {
+            a {
+                color: $white;
+                font-size: 15px;
+                &:hover {
+                    color: $brand-color; 
+                }
+            }
+            &::before {
+                color: $white;
+                content: "\f105";
+                padding: 0 10px;
+                margin-right: 10px;
+                font-family: fontawesome;
+            }
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+            &.active {
+                color: $brand-color;
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+/*----- breadcrumb style css end -----*/
+/*----- shop Sidebar start -----*/
+.shop-sidebar-wrap {
+    @media #{$tablet-device}{
+         padding-bottom: 18px;
+    }
+    @media #{$large-mobile}{
+        padding-bottom: 0;
+    }
+}
+.shop-sidebar {
+    &-wrap{
+        @media #{$tablet-device}{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }    
+    @media #{$tablet-device}{
+        flex-basis: 50%;
+    }
+    & .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-top: -3px;
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+            width: 55px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+            background-color: $brand-color;
+            content: "";
+            position: absolute;
+        }
+    }
+}
+/*----- Sidebar Category -----*/
+.sidebar-category {
+    & li {
+        padding: 3px 0;
+        border-bottom: none;
+        &:last-child {
+            border-bottom: 0px;
+        }
+        & a {
+            font-size: 14px;
+            color: $paragraph;
+            text-transform: capitalize;
+            line-height: 30px;
+            position: relative;
+            display: block;
+            &:hover {
+                color: $brand-color;
+                &::before {
+                    color: $brand-color;
+                }
+            }
+            
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: $paragraph;
+                line-height: 29px;
+                font-family: Fontawesome;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        
+        &.has-children {
+            & > a {
+                padding-left: 15px;
+                &::before {
+                    content: "\f096";
+                    font-size: 12px;
+                }
+            }
+        }
+        
+        & ul {
+            & li {
+                border: none;
+                padding: 5px 25px;
+                & a {
+                    text-transform: capitalize;
+                    padding-left: 20px;
+                    
+                    &::before {
+                        content: "\f105";
+                        color: $paragraph;
+                    }
+                }
+            }
+        }
+    }
+}
+/*----- shop Sidebar end -----*/
+
+/*----- price Sidebar start -----*/
+.price-container{
+    li{
+        label.radio-container{
+            display: block;
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            color: $paragraph;
+            user-select: none;
+            @include transition;
+            input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+
+                &:checked ~ .checkmark:after {
+                    display: block;
+                }
+            }
+            &:hover {
+                color: $brand-color;
+            }
+            .checkmark{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 16px;
+                width: 16px;
+                margin-top: 2px;
+                background-color: #fff;
+                border-radius: 50%;
+                border: 2px solid #ccc;
+
+                &:after{
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    height: 8px;
+                    width: 8px;
+                    background-color: $brand-color;
+                    border-radius: 50%;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%) 
+                }
+            }
+        }
+    }
+}
+/*----- price Sidebar end -----*/
+
+
+/*----- popular item end -----*/
+.popular-item {
+    display: flex;
+    .pop-item-thumb {
+        width: 65px;
+    }
+    .pop-item-des {
+        padding-left: 10px;
+        span {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 0;
+            @media #{$laptop-device} {
+                padding: 2px 0;
+            }
+            a {
+                color: $paragraph;
+                &:hover {
+                    color: $brand-color;
+                }
+            }
+            &.pop-price {
+                color: $paragraph;
+                font-size: 15px;
+            }
+        }
+    }
+}
+/*----- popular item end -----*/
+
+/*----- advertising sidebar start -----*/
+.advertising1 {
+    position: relative;
+    a {   
+    img {
+        width: 100%;
+    }
+    &::before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background-color: rgba(255,255,255,0.2);
+        transform: rotateY(-90deg);
+        @include transition(1s);
+    }
+    &:hover {
+        &::before {
+            transform: rotateY(0);
+            opacity: 0;
+        }
+    }
+    &::after {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background-color: rgba(255,255,255,0.2);
+        transform: rotateX(-90deg);
+        @include transition(1s);
+    }
+    &:hover {
+        &::after {
+            transform: rotateX(0);
+            opacity: 0;
+        }
+    }
+    }
+}
+/*----- advertising sidebar end -----*/
+
+/*----- shop main wrapper start -----*/
+.shop-top-bar {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.top-bar-left {
+    display: flex;
+    align-items: center;
+    @media #{$large-mobile} {
+        margin-bottom: 20px;
+        justify-content: space-between;
+    }
+    .product-view-mode {
+        a {
+            color: $white;
+            background-color: #d6d6d6;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 5px;
+            i {
+                line-height: 40px;
+                font-size: 20px;
+            }
+            &:hover {
+                background-color: $brand-color;
+            }
+            &.active {
+                background-color: $brand-color;
+            }
+        }
+    }
+    .product-amount {
+        p {
+            color: $paragraph;
+            text-transform: capitalize;
+        }
+    }
+}
+.top-bar-right {
+    display: flex;
+    justify-content: flex-end;
+    @media #{$large-mobile} {
+        justify-content: center;
+    }
+    .product-short {
+        display: flex;
+        align-items: center;
+        p {
+            margin-right: 10px;
+        }
+    }
+}
+// nice select
+.nice-select {
+    width: 200px;
+    padding: 0 10px;
+    &.open {
+        border-color: $brand-color;
+    }
+    .list {
+        right: 0;
+        left: auto;
+    }
+    .option {
+        font-size: 13px;
+        line-height: 34px;
+        min-height: 34px;
+    }
+}
+/*----- shop main wrapper end -----*/
+
+
+.shop-product-wrap {
+    &.list {
+        .product__item {
+            display: none;
+        }
+    }
+}
+
+.shop-product-wrap {
+    &.grid {
+        .product__item {
+            display: block;
+            animation-name: zoomIn;
+            animation-duration: 1s;
+        }
+    }
+}
+
+.shop-product-wrap {
+    &.grid {
+        .product-list-item {
+            display: none !important;
+        }
+    }
+}
+.shop-product-wrap {
+    &.list {
+        .product-list-item {
+            display: flex;
+        }
+    }
+}
+
+.shop-product-wrap {
+    &.row {
+        &.list {
+            .col-lg-4, .col-lg-3 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+// pagination area style
+.paginatoin-area {
+    border-top: 1px solid #f2f2f2;
+    padding-bottom: 42px;
+    .pagination-box {
+        li {
+            display: inline-block;
+            a {
+                color: $paragraph;
+                padding: 10px;
+                
+            }
+            &.active {
+                a {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

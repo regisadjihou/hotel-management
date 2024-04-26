@@ -1,0 +1,382 @@
+
+/*---- home thee color variation start ----*/
+
+.brand-color2 {
+    a {
+        &:hover {
+            color: $brand-color2 !important;
+        }
+        &.active {
+            color: $brand-color2 !important;
+        }
+    }
+}
+
+.header-top {
+    &.color-black {
+        li {
+            color: $black-soft;
+            a {
+                color: $black-soft;
+            }
+        }
+    }
+    &.brand-color2 {
+        .header-top-right {
+            ul.currency-list,
+            .language-list,
+            .account-list {
+                li {
+                    a {
+                        color: $black-soft;
+                        &:hover,
+                        &.active {
+                            color: $white !important;
+                            background-color: $brand-color2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// menu section
+.main-menu {
+    &.brand-color2 {
+        ul {
+            li {
+                &:hover > {
+                    a {
+                        color: $brand-color2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header cart section
+.header-cart-option {
+    &.brand-color2 {
+        li {
+            &:hover {
+                color: $brand-color2;
+            }
+            button {
+                &:hover {
+                    color: $brand-color2;
+                }
+            }
+            ul {
+                &.mini-cart-drop-down {
+                    border-top-color: $brand-color2;
+                }
+            }
+        } 
+        &.hm-5 {
+            .account-list {
+                border-top-color: $brand-color2;
+                a {
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+            } 
+        }
+    }
+    .cart-button {
+        &:hover {
+            color: $white !important;
+            background-color: $brand-color2 !important;
+        }
+    }
+}
+
+// slider button
+.brand-color2 {
+    .home-btn {
+        color: $white !important;
+        background-color: $brand-color2 !important;
+        &:hover {
+            color: $white !important;
+            background-color: $black-soft !important;  
+        }
+    }
+}
+
+// product-item section
+.brand-color2 {
+    .product__item {
+        .product__thumb {
+            .action_link {
+                a {
+                    &:hover {
+                        color: $white !important;
+                        background-color: $brand-color2 !important;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+// section title color2
+.brand-color2 {
+    h2 {
+       span {
+           color: $brand-color2 !important;
+       } 
+    }
+}
+
+// footer color
+footer {
+    .brand-color2 {
+        .footer-title {
+            h6 {
+                color: $brand-color2 !important;
+            }
+        }
+        ul {
+            &.location {
+                li {
+                    i {
+                        color: $brand-color2 !important; 
+                    }
+                }
+            }
+        }
+        .footer-social-link {
+            a {
+                &:hover {
+                    color: $brand-color2 !important; 
+                }
+            }
+        }
+        .copyright-text {
+            a {
+                color: $brand-color2 !important; 
+            }
+        }
+    }
+}
+
+// slick arrow color layout 2
+.brand-color2 {
+    .slick-arrow {
+        &:hover {
+            color: $white;
+            background-color: $brand-color2 !important;
+        }
+    }
+}
+
+// newsletter area color layout 2
+.newsletter-area {
+    &.brand-color2 {
+        background-color: $brand-color2 !important;
+        background-image: none;
+        .newsletter-field {
+            background: #038abd;
+        }
+        .submit-btn {
+            color: $brand-color2;
+            background-color: $white;
+            &:hover {
+                color: $white;
+                background-color: $black-soft; 
+            }
+        }
+    }
+}
+/*---- home thee color variation end ----*/
+
+
+
+
+/*---- home four color variation start ----*/
+
+.brand-color3 {
+    a {
+        &:hover {
+            color: $brand-color3 !important;
+        }
+        &.active {
+            color: $brand-color3 !important;
+        }
+    }
+}
+
+.header-top {
+    &.color-black {
+        li {
+            color: $black-soft;
+            a {
+                color: $black-soft;
+            }
+        }
+    }
+    &.brand-color3 {
+        .header-top-right {
+            ul.currency-list,
+            .language-list,
+            .account-list {
+                li {
+                    a {
+                        color: $black-soft;
+                        &:hover,
+                        &.active {
+                            color: $white !important;
+                            background-color: $brand-color3;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// menu section
+.main-menu {
+    &.brand-color3 {
+        ul {
+            li {
+                &:hover > {
+                    a {
+                        color: $brand-color3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header cart section
+.header-cart-option {
+    &.brand-color3 {
+        li {
+            &:hover {
+                color: $brand-color3;
+            }
+            button {
+                &:hover {
+                    color: $brand-color3;
+                }
+            }
+            ul {
+                &.mini-cart-drop-down {
+                    border-top-color: $brand-color3;
+                }
+            }
+        } 
+    }
+    .cart-button {
+        &:hover {
+            color: $white !important;
+            background-color: $brand-color3 !important;
+        }
+    }
+}
+
+// slider button
+.brand-color3 {
+    .home-btn {
+        color: $white !important;
+        background-color: $brand-color3 !important;
+        &:hover {
+            color: $white !important;
+            background-color: $black-soft !important;  
+        }
+    }
+}
+
+// product-item section
+.brand-color3 {
+    .product__item {
+        .product__thumb {
+            .action_link {
+                a {
+                    &:hover {
+                        color: $white !important;
+                        background-color: $brand-color3 !important;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+// section title color2
+.brand-color3 {
+    h2 {
+       span {
+           color: $brand-color3 !important;
+       } 
+    }
+}
+
+// footer color
+footer {
+    .brand-color3 {
+        .footer-title {
+            h6 {
+                color: $brand-color3 !important;
+            }
+        }
+        ul {
+            &.location {
+                li {
+                    i {
+                        color: $brand-color3 !important; 
+                    }
+                }
+            }
+        }
+        .footer-social-link {
+            a {
+                &:hover {
+                    color: $brand-color3 !important; 
+                }
+            }
+        }
+        .copyright-text {
+            a {
+                color: $brand-color3 !important; 
+            }
+        }
+    }
+}
+
+// slick arrow color layout 2
+.brand-color3 {
+    .slick-arrow {
+        &:hover {
+            color: $white;
+            background-color: $brand-color3 !important;
+        }
+    }
+}
+
+// newsletter area color layout 2
+.newsletter-area {
+    &.brand-color3 {
+        background-color: $brand-color3 !important;
+        background-image: none;
+        .newsletter-field {
+            background: #038abd;
+        }
+        .submit-btn {
+            color: $brand-color3;
+            background-color: $white;
+            &:hover {
+                color: $white;
+                background-color: $black-soft; 
+            }
+        }
+    }
+}
+/*---- home four color variation end ----*/
+
+
+

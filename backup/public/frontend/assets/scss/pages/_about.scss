@@ -1,0 +1,150 @@
+/*------- Start About Page Wrapper --------*/
+.about-us-wrapper {
+    @media #{$laptop-device} {
+        padding-top: 90px !important;
+        padding-bottom: 92px !important;
+    }
+    @media #{$tablet-device} {
+        padding-bottom: 92px !important;
+    }
+    @media #{$large-mobile} {
+        padding-top: 55px !important;
+        padding-bottom: 50px !important;
+    }
+}
+.about-text-wrap {
+    font-size: 16px;
+    line-height: 28px;
+
+    @media #{$tablet-device} {
+        padding: 0 20px;
+    }
+
+    h2 {
+        color: $black-soft;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        margin-top: -6px;
+        @media #{$large-mobile} {
+            font-size: 36px;
+            line-height: 36px;
+        }
+        @media #{$small-mobile} {
+            font-size: 26px;
+            line-height: 26px;
+        }
+        span {
+            display: block;
+            font-weight: 400;
+            font-size: 30px;
+            margin-bottom: 12px;
+
+            @media #{$small-mobile} {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.about-image-wrap {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+    @media #{$laptop-device,$desktop-device} {
+        margin-bottom: 0;
+    }
+
+    &:after {
+        border: 5px solid $brand-color;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        z-index: -1;
+    }
+}
+/*------- end About Page Wrapper --------*/
+
+/*------- Start facts area --------*/
+.facts-area  {
+    background-color: #f8f8f8;
+    .fact-icon {
+        i {
+            font-size: 36px;
+            color: $paragraph;
+        }
+    }
+    .facts-content {
+        .counter {
+            color: $black-soft;
+            font-size: 48px;
+            font-weight: 600;
+        }
+        h5 {
+            font-size: 18px;
+            line-height: 30px;
+            @media #{$tablet-device} {
+                font-size: 16px;
+            }
+        }
+    }
+}
+/*------- end facts area --------*/
+
+// team area start
+.team-member {
+    @include transition;
+    .team-thumb {
+        img {
+            width: 100%;
+        }
+    }
+    .team-content {
+        padding: 15px;
+        border: 1px solid #eeeeee;
+        h3 {
+            color: $black-soft;
+            font-size: 20px;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+        p {
+            color: $paragraph;
+            line-height: 20px; 
+        }
+        a {
+            color: $paragraph;
+            line-height: 20px;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+        .team-social {
+            margin-top: 15px;
+            a {
+                color: $black-soft;
+                width: 34px;
+                height: 34px;
+                display: inline-block;
+                text-align: center;
+                line-height: 34px;
+                border: 1px solid $black-soft;
+                border-radius: 50%;
+                margin-right: 5px;
+                &:hover {
+                    background-color: $brand-color;
+                    border-color: $brand-color;
+                }
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+}

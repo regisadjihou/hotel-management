@@ -1,0 +1,416 @@
+/*----- product details slider start ----*/
+.pro-large-img {
+    position: relative;
+    img {
+        width: 100%;
+        position: relative;
+        border: 1px solid #e1e1e1;
+    }
+    .img-view {
+        .img-popup {
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $brand-color;
+            position: absolute;
+            @include translate(-50%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            @include transition;
+            i {
+                color: $black-soft;
+                line-height: 50px;
+                font-size: 22px;
+            }
+        }
+    }
+    &:hover {
+        .img-popup {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+.pro-nav-thumb {
+    cursor: pointer;
+    padding: 5px;
+    img {
+        border: 1px solid #e1e1e1;
+    } 
+}
+.pro-nav {
+    margin: -5px;
+    .slick-slide {
+        &.slick-current {
+        img {
+            border: 1px solid $brand-color;
+            }
+        }
+    }
+}
+/*----- product details slider end ----*/
+
+
+/*----- product details content start ----*/
+.product__details__content {
+    @media #{$large-mobile} {
+        margin-bottom: 25px !important;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: capitalize;
+        a {
+            color: $black-soft;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+    h6 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        padding: 10px 0;
+        text-transform: capitalize;
+        @media #{$large-mobile} {
+            padding: 0;
+        }
+        a {
+            color: $black-soft;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+    .ratings {
+        & a {
+            color: $paragraph;
+            padding-left: 10px;
+            text-transform: capitalize;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+    .price-box {
+        .regular-price {
+            color: $black-soft;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .old-price {
+            font-size: 14px;
+        }
+    }
+    .action_link {
+        display: flex;
+        @media #{$extra-small-mobile} {
+            display: block !important;
+            text-align: center;
+        }
+    }
+    p {
+        @media #{$large-mobile} {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+        }
+    }
+    // Quantity Colors
+    .quantity {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        & h5 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            margin-right: 20px;
+            margin-bottom: 0;
+            @media #{$extra-small-mobile} {
+                margin-right: 10px;
+            }
+        }
+        & .pro-qty{
+            width: 90px;
+            height: 35px;
+            border: 1px solid #ddd;
+            border-radius: 50px;
+            padding: 0 15px;
+            float: left;
+            & .qtybtn {
+                width: 15px;
+                display: block;
+                float: left;
+                line-height: 31px;
+                cursor: pointer;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 700;
+                color: $paragraph;
+            }
+            & input {
+                width: 28px;
+                float: left;
+                border: none;
+                height: 33px;
+                line-height: 33px;
+                padding: 0;
+                text-align: center;
+                background-color: transparent;
+            }
+        }
+    } 
+
+    // usefull links
+    .useful-links {
+        a {
+            color: $paragraph;
+            margin-right: 10px;
+            &:hover {
+                color: $brand-color;
+            }
+            i {
+                color: $brand-color;
+                font-size: 16px;
+                padding-right: 10px;
+                vertical-align: middle;
+            }
+            @media #{$extra-small-mobile} {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    // tag
+    .tag-line {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        & h5 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            margin-bottom: 0;
+            margin-right: 20px;
+            @media #{$extra-small-mobile} {
+                margin-right: 10px;
+            }
+        }
+        a {
+            color: $paragraph;
+            font-size: 14px;
+            margin-right: 10px;
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+
+    // share icon
+    .share-icon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        & h5 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            margin-bottom: 0;
+            margin-right: 20px;
+            @media #{$extra-small-mobile} {
+                margin-right: 10px;
+            }
+        }
+        a {  
+            color: #fff;
+            display: block;
+            font-size: 13px;
+            line-height: 25px;
+            margin-right: 10px;
+            padding: 0 10px;
+            border-radius: 5px;
+            i {
+                padding-right: 5px;
+            }
+            @media #{$extra-small-mobile} {
+                margin-right: 5px;
+                padding: 0 5px;
+            }
+        }
+    }
+    // color option
+    .color-option {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        @media #{$extra-small-mobile} {
+            margin-right: 10px;
+        }
+        & h5 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            margin-bottom: 5px;
+            margin-right: 20px;
+            text-transform: capitalize;
+        }
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 2px;
+            border: 1px solid #ccc;
+            a {
+                height: 30px;
+                width: 30px;
+                display: block;
+            }
+        }
+    }
+    // size
+    .pro-size {
+        display: flex;
+        align-items: center;
+        & h5 {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 25px;
+            margin-bottom: 0;
+            margin-right: 20px;
+            text-transform: capitalize;
+            @media #{$extra-small-mobile} {
+                margin-right: 10px;
+            }
+        }
+        .nice-select {
+            width: 100px;
+            height: 40px;
+        }
+    }
+    // group quantity
+    .group-product-table {
+        display: block;
+        &.table-bordered {
+            border: none;
+        }
+        td {
+            width: 33.33%;
+            vertical-align: middle;
+            a {
+                color: $paragraph;
+                text-transform: capitalize;
+            }
+            .pro-qty{
+                width: 90px;
+                height: 35px;
+                border: 1px solid #ddd;
+                padding: 0 15px;
+                float: left;
+                & .qtybtn {
+                    width: 15px;
+                    display: block;
+                    float: left;
+                    line-height: 31px;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $paragraph;
+                }
+                & input {
+                    width: 28px;
+                    float: left;
+                    border: none;
+                    height: 33px;
+                    line-height: 33px;
+                    padding: 0;
+                    text-align: center;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+
+/*----- product details content end ----*/
+
+/*----- reviews area start -----*/
+.product-review-info {
+    ul {
+        &.nav-pills {
+            background-color: $light-gray;
+            padding: 15px 0;
+            li {
+                a {
+                    color: $paragraph;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    &.active {
+                        color: $black-soft;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .table-striped {
+        tr {
+           td {
+               width: 50%;
+           } 
+        }
+    }
+    .rev-btn {
+        color: $white;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        line-height: 46px;
+        padding: 0 30px;
+        font-weight: 500;
+        display: block;
+        border-radius: 30px;
+        text-transform: uppercase;
+        background-color: $black-soft;
+        @include transition;
+        &:hover {
+            color: $black-soft;
+            background-color: $brand-color;
+        }
+    }
+}
+
+/*----- reviews area end -----*/
+
+// product details vertical slider css
+.vertical-slider {
+    display: flex;
+    flex-wrap: wrap;
+    .vertical-first {
+        flex-basis: 80%; 
+        max-width: 80%;
+    }
+    .vertical-second {
+        max-width: 20%;
+        flex-basis: 20%;
+    }
+}
+
+// product details slider box
+.slider-box-center {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    p {
+        max-width: 70%;
+        @media #{$large-mobile} {
+            max-width: 95%;
+        }
+    }
+  } 

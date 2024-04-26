@@ -1,0 +1,117 @@
+/*----- blog sidebar start -------*/
+.blog-sidebar {
+    // sidebar title
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: uppercase;
+        position: relative;
+        &::before {
+            width: 55px;
+            height: 2px;
+            bottom: -10px;
+            left: 0;
+            background-color: $brand-color;
+            content: "";
+            position: absolute;
+        }
+    }
+
+    // sidebar search form
+    .search-field {
+        width: calc(100% - 50px);
+        border: 1px solid #ccc;
+        padding: 0 10px;
+        color: $paragraph;
+        font-size: 14px;
+        height: 50px;
+        float: left;
+        text-transform: capitalize;
+    }
+    .search-btn {
+        width: 50px;
+        height: 50px;
+        margin-left: -4px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        i {
+            font-size: 20px;
+            line-height: 50px;
+            color: $black-soft;
+        }
+        &:hover {
+            i {
+                color: $brand-color;
+            }
+        }
+    }
+
+    // archives
+    .blog-archive {
+        li {
+            margin-bottom: 10px;
+            a {
+                color: $paragraph;
+                &:hover {
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+
+    // blog tags
+    .blog-tags {
+        li {
+            display: inline-block;
+            margin-bottom: 5px; 
+            a {
+                color: $black-soft;
+                font-size: 13px;
+                border: 1px solid #ccc;
+                padding: 7px 15px;
+                display: inline-block;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: $brand-color;
+                    border-color: $brand-color;
+                }
+            }
+        }
+    }
+
+    // recent post
+    .recent-post{
+        display: flex;
+        .recent-post-thumb {
+            width: 65px;
+        }
+        .recent-post-des {
+            padding-left: 10px;
+            span {
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                padding: 10px 0;
+                text-transform: capitalize;
+                @media #{$laptop-device} {
+                    padding: 2px 0;
+                }
+                a {
+                    color: $paragraph;
+                    &:hover {
+                        color: $brand-color;
+                    }
+                }
+                &.post-date {
+                    color: $paragraph;
+                    font-size: 13px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+/*----- blog sidebar end -------*/

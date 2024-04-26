@@ -1,0 +1,10 @@
+.error h1 {
+  font-size: 20rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #c2080f; }
+
+.error h2 {
+  font-size: 25px; }
